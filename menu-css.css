@@ -1,0 +1,532 @@
+body{
+margin: 0;
+   /* background: url(imagens/fundo.jpg) no-repeat center center fixed;
+     
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;*/
+       display: inline-block;
+    text-align: center;
+    
+
+}
+
+/*----------------------------------------------globais*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+p{
+    text-align: center;
+    font-family:monospace;
+    letter-spacing: 2px;
+}
+
+h1{
+    text-align: center;
+    font-family:monospace;
+    letter-spacing: 2px;
+}
+
+p.titulo_branco,.titulo_preto{
+    color:white;
+    padding:2%;
+    font-size: 20px; 
+    letter-spacing: 10px;
+}
+
+p.titulo_preto{
+    color: black;
+}
+
+[class*="se"]{
+    padding-top: 5%;
+}
+    
+/*-----------------------------------------------------fim globais*/
+   
+
+
+#slideshow > div {
+  position: absolute;
+  z-index: -1;
+}
+
+.imgslide {
+    width:80%; 
+    border-radius: 2% 2% 2% 2%;
+    margin-right: 10%;
+    
+}
+
+
+
+.cabe{
+    height: 40%;
+    width: 100%;
+    background-color: #276617;
+    border-radius: 0% 0% 1% 1%;
+    box-shadow: 0px 1px 0px #888888;
+}
+.cabe nav img{
+
+}
+
+.sec1{
+    background-color: white;
+    
+    
+}
+.sec1 p{
+    font-size: 20px;
+    font-family:monospace;
+    padding: 2%;
+}
+
+.sec1 img{
+    border-radius: 50%;
+    width: 20%;
+    
+}
+
+.sec1 p span{
+    text-decoration: underline;
+    letter-spacing: 5px;
+
+}
+
+
+.sec2{
+    background-color: #006b13;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    
+}
+
+.sec2 h2{
+    font-family: monospace;
+    background-color: white;
+    color: #006b13;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius:  0.5vw;
+}
+
+.sec2 button{
+    border-radius:0.5vw;
+    font-family: monospace;
+    width: 15%;
+}
+
+
+.sec3{
+    width: 100%;
+    background: white;
+}
+
+.sec4{
+    width: 100%;
+    background-color: #006b13;
+    display: block;
+    
+}
+
+
+.sec4 .aab{
+    padding: 2%;;
+    background-color: #006b13;
+    display: block;
+    align-items: center;
+
+    
+}
+
+.sec4 h2{
+    color:white;
+    font-family: monospace;
+    padding: 1%;
+}
+
+.icons{
+    align-content: center;
+    display: block;
+}
+.icons img{
+    padding: 2%;
+  display: inline;
+  max-width:225px;
+  max-height:90px;
+  width: auto;
+  height: auto;
+
+} 
+
+
+
+.btn{
+    background: white;
+    text-decoration: none;
+    border-radius: 0.5vw;
+    padding: 0.5%;
+   
+}
+
+
+
+
+
+
+.aab{
+}
+
+
+
+
+
+
+
+
+
+
+
+/*form*/
+
+input[type=text], select, textarea {
+    width: 75%; 
+    padding: 2%; 
+    border: 1px solid #ccc; 
+    border-radius: 0.5vw; 
+    box-sizing: border-box; 
+    margin-top: 0.5vw; 
+    margin-bottom: 16px;
+    font-family:monospace;
+       display: inline-block;
+    text-align: center;
+}
+    
+
+
+input[type=submit] {
+    background-color: white;
+    padding: 2% 2%;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin-bottom: 2%;
+    display: inline-block;
+    
+}
+
+
+/*fim form*/
+
+
+
+
+
+input[type=checkbox]{
+	visibility: hidden;	
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:1%;
+	display: block;
+	text-align: center;	
+    
+    margin-top: 1%;
+    
+
+  
+}
+
+li {
+    display:inline-block;
+ 	text-align: center;
+    
+
+}
+
+li a{
+display:block;
+    min-width:150px;
+    height: 30px;
+    text-align: center;
+    font-family:monospace;;
+    color:white;
+    text-decoration: none;
+    
+}
+
+li:hover a{
+    text-decoration: underline;
+}
+
+li:hover ul a{
+    background: #f3f3f3;
+    color:#2f3036;
+    height:50px;
+    line-height: 40px;
+    
+}
+
+li:hover li a:hover{
+    text-decoration: underline;
+}
+
+/* so para dfesktop*/
+
+
+li ul{
+    display:none;
+    
+}
+
+li ul li{
+    display:block;
+    float:none;
+    
+}
+
+li ul li a{
+    width: auto;
+    min-width: 150px;
+    padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover{
+    display: block;
+}
+
+.open-menu{
+        display: none;
+        text-align: center;
+        background-color: #276617;
+		color: white;
+}
+
+
+
+
+
+/***************************** percentagem desktop ******************/
+
+[class*="col_"]:first-child {
+	margin-left: 0;
+}
+
+[class*="col_"] {
+    float: left;
+    margin-right: 20px;
+    min-height: 100px;
+   
+}
+
+.col_1 { width: calc(8.33% - 20px); }
+.col_2 { width: calc(16.66% - 20px); }
+.col_3 { width: calc(25% - 20px); }
+.col_4 { width: calc(33.33% - 20px); }
+.col_5 { width: calc(41.66% - 20px); }
+.col_6 { width: calc(50% - 20px); }
+.col_7 { width: calc(58.33% - 20px); }
+.col_8 { width: calc(66.66% - 20px); }
+.col_9 { width: calc(75% - 20px); }
+.col_10 { width: calc(83.33% - 20px); }
+.col_11 { width: calc(91.66% - 20px); }
+.col_12 { width: calc(100% - 20px); }
+
+
+.row:before,
+.row:after {
+ 	content:""; clear:both;
+	display:block;
+}
+
+/****************************ipads mini tablet *********************/
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1023px) 
+    {
+        
+[class*="com_"]:first-child {
+	margin-left: 0;
+}
+
+[class*="com_"] {
+    float: left;
+    margin-right: 20px;
+    min-height: 100px;
+   
+}        
+
+.com_1 { width: calc(12.5% - 20px); }
+.com_2 { width: calc(25% - 20px); }
+.com_3 { width: calc(37.5% - 20px); }
+.com_4 { width: calc(50% - 20px); }
+.com_5 { width: calc(62.5% - 20px); }
+.com_6 { width: calc(75% - 20px); }
+.com_7 { width: calc(87.5% - 20px); }
+.com_8 { width: calc(100% - 20px); }
+.com_v {display: none;}     
+        
+		.imagens img{
+			padding: 2%;
+			align-items: center;
+		}
+        
+        .icons{
+            margin-left: 22%;/*nao funciona ?????*/
+        }    
+        
+        .sec2 h2{
+            margin-left: 5%
+        }
+        
+}
+
+
+
+
+
+/*iphone                 **********************/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 767px)
+   {
+    [class*="cos_"]:first-child {
+	margin-left: 0;
+}
+
+[class*="cos_"] {
+    float: left;
+    margin-right: 20px;
+    min-height: 100px;
+    
+}      
+       
+.cos_1 { width: calc(20% - 20px); }
+.cos_2 { width: calc(40% - 20px); }
+.cos_3 { width: calc(60% - 20px); }
+.cos_4 { width: calc(80% - 20px); }
+.cos_5 { width: calc(100% - 20px); }
+.cos_v { display: none ; }   
+
+	   .imagens img{
+		   padding: 1%;
+	   }
+}
+
+
+.sec3{
+    width: 100%;
+    height:auto;
+    background: white;
+    margin-bottom: 70%;
+}
+
+
+
+
+.sec4 img{
+    padding-left: 10%;
+}
+
+
+
+
+
+/*iphone 5s versao landscape *************************/
+@media only screen 
+  and (min-width: 319px) 
+  and (max-width: 567px)
+  and (orientation: landscape)
+   {
+    [class*="cos_"]:first-child {
+	margin-left: 0;
+}
+
+[class*="cos_"] {
+    float: left;
+    margin-right: 20px;
+    min-height: 100px;
+ 
+}      
+       
+.cos_1 { width: calc(20% - 20px); }
+.cos_2 { width: calc(40% - 20px); }
+.cos_3 { width: calc(60% - 20px); }
+.cos_4 { width: calc(80% - 20px); }
+.cos_5 { width: calc(100% - 20px); }
+.cos_v { display: none ; }   
+
+
+}
+/******************************* menu****************************/
+
+@media screen and (max-width: 319px){
+	[class*="col_"] {
+		float: none; width: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+    ul{
+        position: static;
+        display: none;
+	
+    }
+    li {
+        margin-bottom:1px;
+		    list-style:none;
+
+    }
+    ul li, li a{
+        width: 80%;
+        padding-left: 6%;
+    }
+    
+    .open-menu{
+        display: block;
+    }
+
+    
+    input[type=checkbox]{
+        display: none;
+        
+    }
+    
+    input[type=checkbox]:checked ~ #menu{
+        display: block;
+        
+    }
+	
+.sec2 img{
+    width: 70%;
+    margin-left: 10%
+}
+     
+.sec1 img{
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 10%;
+    
+} 
+    .sec2 h2{
+        margin-right: 20%;  
+    }  .
+}
